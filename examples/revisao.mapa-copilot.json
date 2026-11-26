@@ -1,0 +1,166 @@
+{
+  "events": [
+    {
+      "type": "sessionStart",
+      "name": "",
+      "tool": "",
+      "parent": "",
+      "agent": "",
+      "session": "35efd5b4-344b-410b-bef9-e39eb824f4c3",
+      "detail": ""
+    },
+    {
+      "type": "preToolUse",
+      "name": "",
+      "tool": "tool_search_tool",
+      "parent": "",
+      "agent": "",
+      "session": "35efd5b4-344b-410b-bef9-e39eb824f4c3",
+      "detail": ""
+    },
+    {
+      "type": "postToolUse",
+      "name": "",
+      "tool": "tool_search_tool",
+      "parent": "",
+      "agent": "",
+      "session": "35efd5b4-344b-410b-bef9-e39eb824f4c3",
+      "detail": ""
+    },
+    {
+      "type": "preToolUse",
+      "name": "",
+      "tool": "catalogo-demo-get_agent",
+      "parent": "",
+      "agent": "",
+      "session": "35efd5b4-344b-410b-bef9-e39eb824f4c3",
+      "detail": ""
+    },
+    {
+      "type": "postToolUse",
+      "name": "",
+      "tool": "catalogo-demo-get_agent",
+      "parent": "",
+      "agent": "",
+      "session": "35efd5b4-344b-410b-bef9-e39eb824f4c3",
+      "detail": ""
+    },
+    {
+      "type": "preToolUse",
+      "name": "",
+      "tool": "task",
+      "parent": "",
+      "agent": "",
+      "session": "35efd5b4-344b-410b-bef9-e39eb824f4c3",
+      "detail": ""
+    },
+    {
+      "type": "subagentStart",
+      "name": "revisor-catalogo-demo",
+      "tool": "",
+      "parent": "35efd5b4-344b-410b-bef9-e39eb824f4c3",
+      "agent": "32c28254-1f03-4f8e-97da-9802ae463404",
+      "session": "35efd5b4-344b-410b-bef9-e39eb824f4c3",
+      "detail": ""
+    },
+    {
+      "type": "preToolUse",
+      "name": "revisor-catalogo-demo",
+      "tool": "view",
+      "parent": "35efd5b4-344b-410b-bef9-e39eb824f4c3",
+      "agent": "32c28254-1f03-4f8e-97da-9802ae463404",
+      "session": "32c28254-1f03-4f8e-97da-9802ae463404",
+      "detail": "entrega.txt"
+    },
+    {
+      "type": "preToolUse",
+      "name": "revisor-catalogo-demo",
+      "tool": "task",
+      "parent": "35efd5b4-344b-410b-bef9-e39eb824f4c3",
+      "agent": "32c28254-1f03-4f8e-97da-9802ae463404",
+      "session": "32c28254-1f03-4f8e-97da-9802ae463404",
+      "detail": ""
+    },
+    {
+      "type": "postToolUse",
+      "name": "revisor-catalogo-demo",
+      "tool": "view",
+      "parent": "35efd5b4-344b-410b-bef9-e39eb824f4c3",
+      "agent": "32c28254-1f03-4f8e-97da-9802ae463404",
+      "session": "32c28254-1f03-4f8e-97da-9802ae463404",
+      "detail": "entrega.txt"
+    },
+    {
+      "type": "subagentStart",
+      "name": "explore",
+      "tool": "",
+      "parent": "32c28254-1f03-4f8e-97da-9802ae463404",
+      "agent": "41923637-7e66-465f-b63c-9adbcf0e1418",
+      "session": "d192be4d-8986-4a83-8213-47cdc41a0214",
+      "detail": ""
+    },
+    {
+      "type": "preToolUse",
+      "name": "explore",
+      "tool": "view",
+      "parent": "32c28254-1f03-4f8e-97da-9802ae463404",
+      "agent": "41923637-7e66-465f-b63c-9adbcf0e1418",
+      "session": "41923637-7e66-465f-b63c-9adbcf0e1418",
+      "detail": "verificacao.txt"
+    },
+    {
+      "type": "postToolUse",
+      "name": "explore",
+      "tool": "view",
+      "parent": "32c28254-1f03-4f8e-97da-9802ae463404",
+      "agent": "41923637-7e66-465f-b63c-9adbcf0e1418",
+      "session": "41923637-7e66-465f-b63c-9adbcf0e1418",
+      "detail": "verificacao.txt"
+    },
+    {
+      "type": "subagentStop",
+      "name": "explore",
+      "tool": "",
+      "parent": "32c28254-1f03-4f8e-97da-9802ae463404",
+      "agent": "41923637-7e66-465f-b63c-9adbcf0e1418",
+      "session": "d192be4d-8986-4a83-8213-47cdc41a0214",
+      "detail": ""
+    },
+    {
+      "type": "postToolUse",
+      "name": "revisor-catalogo-demo",
+      "tool": "task",
+      "parent": "35efd5b4-344b-410b-bef9-e39eb824f4c3",
+      "agent": "32c28254-1f03-4f8e-97da-9802ae463404",
+      "session": "32c28254-1f03-4f8e-97da-9802ae463404",
+      "detail": ""
+    },
+    {
+      "type": "subagentStop",
+      "name": "revisor-catalogo-demo",
+      "tool": "",
+      "parent": "35efd5b4-344b-410b-bef9-e39eb824f4c3",
+      "agent": "32c28254-1f03-4f8e-97da-9802ae463404",
+      "session": "35efd5b4-344b-410b-bef9-e39eb824f4c3",
+      "detail": ""
+    },
+    {
+      "type": "postToolUse",
+      "name": "",
+      "tool": "task",
+      "parent": "",
+      "agent": "",
+      "session": "35efd5b4-344b-410b-bef9-e39eb824f4c3",
+      "detail": ""
+    },
+    {
+      "type": "sessionEnd",
+      "name": "",
+      "tool": "",
+      "parent": "",
+      "agent": "",
+      "session": "35efd5b4-344b-410b-bef9-e39eb824f4c3",
+      "detail": ""
+    }
+  ]
+}

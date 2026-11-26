@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mapa de agentes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <span class="brandmark" aria-hidden="true">⌬</span>
+        <h1>Mapa de agentes</h1>
+      </div>
+      <div class="actions">
+        <button id="live" hidden>Sessão real</button
+        ><button id="play">Reproduzir demo</button>
+      </div>
+    </header>
+    <main>
+      <div class="tools">
+        <span id="mode">Sessão simulada</span
+        ><select id="sessions" hidden aria-label="Selecionar sessão"></select
+        ><span id="count"></span>
+      </div>
+      <div class="viewport">
+        <div id="canvas">
+          <svg id="edges" aria-hidden="true"></svg>
+          <div id="nodes"></div>
+        </div>
+        <p id="empty" hidden>Aguardando eventos do Copilot…</p>
+      </div>
+      <section id="detail" aria-label="Detalhes do agente">
+        <div>
+          <small>Agente selecionado</small><strong id="selected"></strong>
+        </div>
+        <div>
+          <small id="activityLabel">Atividade</small><code id="activity"></code>
+        </div>
+        <div><small>Delegado por</small><strong id="parent"></strong></div>
+        <div class="history">
+          <small>Ferramentas usadas</small><code id="history"></code>
+        </div>
+      </section>
+    </main>
+    <script src="map.js"></script>
+  </body>
+</html>

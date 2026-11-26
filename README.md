@@ -1,0 +1,33 @@
+# Mapa de agentes
+
+Extensão do VS Code para acompanhar quem delegou uma tarefa no GitHub Copilot, quais agentes estão ativos e quais ferramentas cada um usou. O painel recebe eventos dos hooks locais do Copilot. Pode ser usado em qualquer projeto local compatível, inclusive em projetos sem servidor MCP.
+
+## Instalar
+
+No VS Code 1.109 ou superior, abra a paleta e execute **Extensions: Install from VSIX...**. Selecione o instalador da extensão. Pelo terminal, use `code --install-extension mapa-de-agentes-0.1.5.vsix`. O identificador `agent-catalog-local.mapa-de-agentes` foi preservado para atualizar instalações anteriores.
+
+## Acompanhar uma sessão
+
+1. Abra a pasta do projeto que deseja monitorar em uma janela local confiável do VS Code.
+2. Na paleta, execute **Mapa de agentes: Abrir painel**. Escolha **Sessão real** e depois **Criar hooks**.
+3. Deixe a aba aberta e inicie uma sessão do GitHub Copilot na mesma pasta com os hooks habilitados. O processo que executa os hooks precisa encontrar `node` no PATH.
+4. Peça ao Copilot para delegar uma leitura ao Explore. Selecione o nó no mapa para inspecionar o agente pai, o estado e as ferramentas. Em **Saída → Mapa de agentes**, é possível conferir a entrega dos eventos.
+
+O coletor envia metadados por um socket local. Os hooks gerados contêm caminhos específicos da máquina e da pasta. Gere-os em cada ambiente. Para desativar a integração de um projeto, remova o arquivo gerado `.github/hooks/mapa-de-agentes.json`.
+
+## Apresentar a demo
+
+No painel, clique em **Reproduzir demo**. Para rever uma execução gravada, abra o arquivo `examples/revisao.mapa-copilot.json` deste repositório e clique em **Rever execução**. A visualização da gravação funciona offline. Se o VS Code abrir o JSON como texto, use **Reopen Editor With... → Mapa de agentes**.
+
+## Desenvolver e gerar o instalador
+
+Abra a raiz deste repositório no VS Code e pressione **F5** para executar a extensão em uma janela de desenvolvimento. Para gerar o VSIX, use Node.js 22 ou superior e npm na raiz do repositório.
+
+```sh
+npm ci
+npm run package
+```
+
+O arquivo `mapa-de-agentes-<versão>.vsix` será criado na raiz. O comando inclui o painel, o coletor e as mídias locais no pacote.
+
+[Hooks do VS Code](https://code.visualstudio.com/docs/agent-customization/hooks) · [Eventos do GitHub Copilot](https://docs.github.com/en/copilot/reference/hooks-reference)

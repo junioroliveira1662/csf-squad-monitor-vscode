@@ -1,0 +1,50 @@
+{
+  "name": "mapa-de-agentes",
+  "displayName": "Mapa de agentes",
+  "description": "Visualize as delegações e ferramentas do GitHub Copilot.",
+  "publisher": "agent-catalog-local",
+  "version": "0.1.5",
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "categories": [
+    "Visualization"
+  ],
+  "main": "./extension.cjs",
+  "contributes": {
+    "commands": [
+      {
+        "command": "mapa.agentes",
+        "title": "Mapa de agentes: Abrir painel"
+      }
+    ],
+    "customEditors": [
+      {
+        "viewType": "mapa.gravacao",
+        "displayName": "Mapa de agentes",
+        "selector": [
+          {
+            "filenamePattern": "*.mapa-copilot.json"
+          }
+        ],
+        "priority": "default"
+      }
+    ]
+  },
+  "activationEvents": [
+    "workspaceContains:.github/hooks/mapa-de-agentes.json"
+  ],
+  "private": true,
+  "scripts": {
+    "package": "vsce package --no-dependencies --allow-missing-repository --skip-license"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "4.0.0"
+  },
+  "files": [
+    "extension.cjs",
+    "hook.cjs",
+    "media/**",
+    "README.md"
+  ]
+}
