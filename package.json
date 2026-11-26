@@ -3,7 +3,7 @@
   "displayName": "CSF Squad Monitor",
   "description": "Painel da iniciativa CSF Agent Squad do Banco Carrefour para acompanhar delegações e ferramentas no GitHub Copilot.",
   "publisher": "agent-catalog-local",
-  "version": "0.1.6",
+  "version": "0.0.1",
   "engines": {
     "vscode": "^1.109.0"
   },
