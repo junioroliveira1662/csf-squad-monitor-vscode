@@ -2,9 +2,19 @@
 
 **CSF Agent Squad** é a iniciativa de squad agêntica do Banco Carrefour. O **CSF Squad Monitor** é a extensão do VS Code que permite acompanhar essa squad no GitHub Copilot. Cada seta indica quem delegou a tarefa. Selecione um agente para ver a ferramenta que ele usou. O painel recebe eventos dos hooks locais do Copilot. Pode ser usado em qualquer projeto local compatível, inclusive em projetos sem servidor MCP.
 
-## Instalar
+## Instalar no VS Code
 
-No VS Code 1.109 ou superior, abra a paleta e execute **Extensions: Install from VSIX...**. Selecione o instalador da extensão. Pelo terminal, use `code --install-extension csf-squad-monitor.vsix`. O identificador `agent-catalog-local.mapa-de-agentes` foi preservado para atualizar instalações anteriores.
+Para instalar a extensão, basta baixar o instalador e abri-lo no VS Code 1.109 ou superior. Você pode fazer isso sem clonar o repositório ou executar o npm.
+
+1. [Baixe o instalador CSF Squad Monitor 0.0.1 (.vsix)](https://github.com/junioroliveira1662/csf-squad-monitor-vscode/raw/refs/heads/main/distribuicao/csf-squad-monitor-0.0.1.vsix).
+2. No VS Code, pressione **Ctrl+Shift+P** (Windows/Linux) ou **⌘⇧P** (macOS), execute **Extensions: Install from VSIX...** e selecione o arquivo baixado.
+3. Na mesma paleta, execute **CSF Squad Monitor: Abrir painel**. Clique em **Reproduzir demo** para conferir a instalação.
+
+Se preferir o terminal, execute o comando na pasta onde salvou o instalador.
+
+```sh
+code --install-extension csf-squad-monitor-0.0.1.vsix
+```
 
 ## Acompanhar uma sessão
 

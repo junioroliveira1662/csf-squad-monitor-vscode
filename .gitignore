@@ -1,4 +1,5 @@
 node_modules/
 *.vsix
+!distribuicao/*.vsix
 .DS_Store
 .github/hooks/mapa-de-agentes.json
