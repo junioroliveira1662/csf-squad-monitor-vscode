@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Executar Mapa de agentes",
+      "name": "Executar CSF Squad Monitor",
       "type": "extensionHost",
       "request": "launch",
       "args": [

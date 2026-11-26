@@ -212,7 +212,7 @@ async function renderView(view, context, media) {
 }
 async function activate(context) {
   let panel;
-  const log = vscode.window.createOutputChannel("Mapa de agentes", {
+  const log = vscode.window.createOutputChannel("CSF Squad Monitor", {
     log: true,
   });
   context.subscriptions.push(log);
@@ -224,7 +224,7 @@ async function activate(context) {
     const media = vscode.Uri.joinPath(context.extensionUri, "media");
     const view = vscode.window.createWebviewPanel(
       "mapaAgentes",
-      "Mapa de agentes",
+      "CSF Squad Monitor",
       vscode.ViewColumn.Active,
       {
         enableScripts: true,
@@ -255,7 +255,7 @@ async function activate(context) {
         await enable(view, context, cleanup, log);
       } catch (err) {
         disconnect();
-        vscode.window.showErrorMessage("Mapa de agentes · " + err.message);
+        vscode.window.showErrorMessage("CSF Squad Monitor · " + err.message);
       } finally {
         busy = false;
         if (panel !== view) disconnect();
@@ -300,7 +300,7 @@ async function activate(context) {
             throw Error();
         } catch {
           view.webview.html =
-            "<p>O arquivo não contém uma sessão válida do Mapa de agentes.</p>";
+            "<p>O arquivo não contém uma sessão válida do CSF Squad Monitor.</p>";
           return;
         }
         view.webview.onDidReceiveMessage((message) => {

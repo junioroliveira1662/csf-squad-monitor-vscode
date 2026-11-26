@@ -43,6 +43,12 @@ header {
   color: var(--violet);
   font-size: 40px;
 }
+.initiative {
+  display: block;
+  color: var(--violet);
+  font-size: 13px;
+  font-weight: 600;
+}
 .brand h1 {
   font-size: clamp(20px, 3vw, 32px);
   margin: 0;

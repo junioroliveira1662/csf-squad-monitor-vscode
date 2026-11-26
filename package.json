@@ -1,9 +1,9 @@
 {
   "name": "mapa-de-agentes",
-  "displayName": "Mapa de agentes",
-  "description": "Visualize as delegações e ferramentas do GitHub Copilot.",
+  "displayName": "CSF Squad Monitor",
+  "description": "Painel da iniciativa CSF Agent Squad do Banco Carrefour para acompanhar delegações e ferramentas no GitHub Copilot.",
   "publisher": "agent-catalog-local",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "engines": {
     "vscode": "^1.109.0"
   },
@@ -15,13 +15,13 @@
     "commands": [
       {
         "command": "mapa.agentes",
-        "title": "Mapa de agentes: Abrir painel"
+        "title": "CSF Squad Monitor: Abrir painel"
       }
     ],
     "customEditors": [
       {
         "viewType": "mapa.gravacao",
-        "displayName": "Mapa de agentes",
+        "displayName": "CSF Squad Monitor",
         "selector": [
           {
             "filenamePattern": "*.mapa-copilot.json"
@@ -36,7 +36,7 @@
   ],
   "private": true,
   "scripts": {
-    "package": "vsce package --no-dependencies --allow-missing-repository --skip-license"
+    "package": "vsce package --no-dependencies --allow-missing-repository --skip-license --out csf-squad-monitor.vsix"
   },
   "devDependencies": {
     "@vscode/vsce": "4.0.0"
